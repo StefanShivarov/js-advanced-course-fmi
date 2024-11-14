@@ -47,7 +47,6 @@ function getUniqueElements(arr, compareFn) {
     let found = false;
 
     for (const key of frequencyMap) {
-      console.log(key);
       if (compareFn(item, key)) {
         frequencyMap.set(key, frequencyMap.get(key) + 1);
       }
