@@ -115,7 +115,6 @@ const fetchProperty = (propertyName, res) => {
 };
 
 const fetchUserPosts = (userId, res, callbackFn) => {
-  console.log(userId);
   https
     .get(`https://jsonplaceholder.typicode.com/posts?userId=${userId}`, (response) => {
       let data = "";
